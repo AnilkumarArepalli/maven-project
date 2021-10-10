@@ -46,8 +46,17 @@
             <artifactId>spring-security-config</artifactId>
             <version>${spring-security.version}</version>
         </dependency>
-
-        <dependency>
+<distributionManagement>
+	<repository>
+		<id>package</id>
+		<url>http://15.207.115.141:8081/repository/package/</url>
+	</repository>
+	<snapshotsrepository>
+		<id>snapshots</id>
+		<url>http://15.207.115.141:8081/repository/snapshots/</url>
+	</snapshotsrepository>
+	</distributionManagement>
+		<dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-validator</artifactId>
             <version>${hibernate-validator.version}</version>
